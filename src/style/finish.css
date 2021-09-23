@@ -1,0 +1,30 @@
+.containerFinish p{
+    margin: 3rem 3.5rem;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+}
+.containerFinish h1{
+    margin: 2rem 3rem;
+}
+
+.containerFinish{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-between;
+    align-items: center;
+    height: 30rem;
+    width: 90%;
+    border-radius: 20px;
+}
+p b{
+
+    font-family: gothamMedium;
+}
+
+.containerFinish p span{
+    color: #A91515;
+    font-weight: 900;
+    font-family: gothamMedium;
+}

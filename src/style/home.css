@@ -1,0 +1,72 @@
+
+.containerApp{
+    background-image: url("../assets/VICHY02_05\ Cel.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 80%;
+    height: 100vh;
+    margin:auto;   
+}
+.containerHome{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    justify-items: center;
+    height: 65%;
+}
+.containerHome img{
+    width: 18rem;
+    display: block;
+    margin: 6rem auto 0 auto;
+}
+
+h2{
+    margin-top: 1.8rem;
+}
+
+.btn1{
+    background-color: #A91515;
+    width: 15rem;
+    height: 3.2rem;
+    border-radius: 20px;
+    border: none;
+    font-family: "gothamMedium";
+    font-size: 9pt;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn1:hover{
+    box-shadow: 6px 6px 5px 2px rgba(0,0,0,0.71);
+    -webkit-box-shadow: 6px 6px 5px 2px rgba(0,0,0,0.71);
+    -moz-box-shadow: 6px 6px 5px 2px rgba(0,0,0,0.71);
+    transition: 0.2s ease-in-out;
+}
+
+@media (min-width: 768px){
+    .containerApp{
+        background-image: url("../assets/BG_VICHY0Ingreso.jpg");
+    }
+    .container{
+        width: 35%;
+        margin:auto;   
+    }
+    .containerHome img{
+        width: 20rem;
+        display: block;
+        margin: 6rem auto 3rem auto;
+    }
+    .btn1{
+        font-size: 10pt;
+        width: 18rem;
+    }
+    .containerHome{
+        height: 75%;
+    }
+}

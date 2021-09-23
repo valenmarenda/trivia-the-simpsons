@@ -1,0 +1,185 @@
+.score-section{
+    height: 100vh;
+    background-image: url("../assets/VICHY02_05\ Cel.jpg");
+    background-color: #ffffff;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: absolute;
+}
+
+.bycImg{
+    background-image: url("../assets/byc2.png");
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+
+#byc{
+    position: absolute;
+    width: 12px;
+    height: 12px;   
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked ~ .bycImg{
+    background-image: url("../assets/byc3.png");
+    cursor: pointer;
+}
+.checkbox-container{
+    cursor: pointer;
+}
+.labelByC{
+    cursor: pointer;
+}
+.checkbox{
+    cursor: pointer;
+}
+
+.containerForm{
+    z-index: 1;
+    position: relative;
+}
+
+.ptsQuiz{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end!important;
+}
+
+.ptsQuiz img{
+    width: 4rem;
+    margin: 0;
+    padding-bottom: 0.8rem;
+}
+.ptsQuiz h1{
+    font-size: 5rem;
+    justify-self: end;
+}
+.ptsQuiz h2{
+    color: #000000;
+    font-size: 2.8rem;
+    font-weight: bolder;
+    padding-bottom: 0.8rem;
+    margin: 0;
+}
+
+.containerForm h2{
+    font-size: 2rem;
+}
+.containerForm p{
+    margin: 2rem 0 1rem 0;
+}
+
+input{
+    border: 0.5px solid #A91515;
+    border-radius: 10px;
+    height: 2.8rem;
+    width: 30rem;
+    font-family: "gothamLight";
+    font-size: 10pt;
+    font-weight: bold;
+    background-color: transparent;
+    margin: 0.5rem auto;
+}
+.containerForm{
+    display: flex;
+    flex-direction: column;
+
+}
+.containerForm .datosForm2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.containerForm .datosForm2 input{
+    width: 14rem;
+    margin: 0.5rem 0;
+}
+.btnForm{
+    background-color: #A91515;
+    width: 18rem;
+    height: 3.2rem;
+    border-radius: 20px;
+    border: none;
+    font-family: "gothamMedium";
+    font-size: 10pt;
+    text-align: center;
+    color: #ffffff;
+    margin: 1rem auto;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btnForm:hover{
+    box-shadow: 6px 6px 5px 2px rgba(0,0,0,0.71);
+    -webkit-box-shadow: 6px 6px 5px 2px rgba(0,0,0,0.71);
+    -moz-box-shadow: 6px 6px 5px 2px rgba(0,0,0,0.71);
+    transition: 0.2s ease-in-out;
+}
+.containerBtn{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.containerByc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.bycButton{
+    height: 2rem;
+    border: none;
+    background-color: transparent; 
+    padding-right: 1rem;
+    cursor: pointer;
+}
+
+.bycButton img{
+    margin: 0;
+}
+
+.formDatos p{
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+@media (min-width: 768px){
+    .score-section{
+        height: 100vh;
+        width: 100%;
+        background-image: url("../assets/BG_VICHY01_10.jpg");
+        background-color: #ffffff;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .containerForm{
+
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    .handleErrors{
+        min-height: 3rem;
+    }
+}

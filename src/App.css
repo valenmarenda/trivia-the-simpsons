@@ -1,38 +1,53 @@
-.App {
+html {
+  font-size: 62.5%;
+  height: 100%;
+ 
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "gothamMedium";
+  src: url('./assets/fonts/GothamMediumRegular.ttf');
+}
+@font-face {
+  font-family: "gothamLight";
+  src: url('./assets/fonts/Gotham-XLight.otf');
+}
+h1{
+  font-family: "gothamMedium";
+  font-size: 15pt;
   text-align: center;
+  color: #A91515;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2{
+  font-family: "gothamLight";
+  font-size: 16pt;
+  text-align: center;
+  font-weight: lighter;
+
+}
+button{
+  font-family: "gothamMedium";
+
+}
+p{
+  font-family: "gothamLight";
+  font-size: 10pt;
+  text-align: center;
+  font-weight: lighter;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+@media (min-width: 768px){
+  h1{
+    font-size: 20pt;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  h2{
+    font-size: 18pt;
   }
 }
