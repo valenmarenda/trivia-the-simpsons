@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from '../assets/VichyLogo.png';
 import '../style/home.css';
 import {Link} from "react-router-dom";
-import {useSpring, animated} from 'react-spring'
+import {useSpring, animated} from 'react-spring';
+import Logo from './Logo'
 
 function Home (){
 
@@ -15,17 +15,20 @@ return(
     <div className=" container">
         <div className="containerHome">
              <div>
-                 <img src={logo} alt="logo" className="logoHome"/>
+                <Logo></Logo> 
              </div>
-             <animated.div style={animationW} >
-                 <h1>BIENVENIDOS A LA TRIVIA DE AMPOLLAS VICHY</h1>
-                 <h2>¡Mucha suerte!</h2>
-             </animated.div>
+             <animated.div style={animationW} className="containerBorder">
+             <div >
+                 <h1>Bienvenidos a la trivia</h1>
+                  <h1><span>The Simpsons</span></h1>  
+                 <h2>¿Están listos?</h2>
+             </div>
              <div >               
                  <Link to="/Quiz">
                      <button className="btn1">Comenzá acá</button>
                  </Link>               
               </div>
+              </animated.div>
         </div>
     </div>
     </div>

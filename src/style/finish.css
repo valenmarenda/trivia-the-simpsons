@@ -28,3 +28,10 @@ p b{
     font-weight: 900;
     font-family: gothamMedium;
 }
+.containerHome .containerBorder{
+    margin-top: 5rem;
+}
+
+.containerBorder p{
+    margin-top: 1rem;
+}

@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import logo from '../assets/VichyLogo.png'
-import byc from '../assets/byc1.png'
 import { useForm } from 'react-hook-form'
 import '../style/form.css';
 import Modal from "./Modal"
@@ -48,9 +46,8 @@ const {
 
 return(
   <> { showFinish === false ?
-    <div className="containerHome container containerForm modalForm">
-        <div id="home" className="flex-colum flex-center">
-             <img src={logo} alt="logo" className="logoHome"/>
+    <div className="containerHome container containerForm modalForm containerBorder2 ">
+        <div id="home" className="flex-colum flex-center " >
              
              <h2>Hiciste</h2>
              <div className="ptsQuiz">
@@ -58,7 +55,7 @@ return(
              <h1> {prop.prop} </h1>
              <h2>pts.</h2>
              </div>
-             <p>Completá acá tus datos para que puedas recibir la ampolla gratis en tu casa</p>
+             <p>Completá acá tus datos para que puedas recibir tu premio</p>
              <div className="containerForm formDatos">
                  <form  onSubmit={handleSubmit(onSubmit)} >
                  <input 
@@ -71,13 +68,13 @@ return(
                      minLength: {value:8, message: "el nombre y apellido debe contener más de 8 caracteres"} })}
                      onChange={handleInputChange}
                   />
-                  
+                
                  <input 
-                     placeholder="Dir (ej: Av Libertador 5235, piso: 6, depto. A)"  
+                     placeholder="Email xxx@xxx"  
                      type="text" 
                      name="dir"
                      {...register("dir", 
-                     { required:{value:true, message: "Debes ingresar tu dirección"}, 
+                     { required:{value:true, pattern:/\S+@\S+\.\S+/, message: "Debes ingresar tu email"}, 
                      maxLength: {value:50, message: "La dirección no debe contener más de 50 caracteres"}, 
                      minLength: {value:8, message: "La dirección debe contener más de 8 caracteres"} })}
                      onChange={handleInputChange}
@@ -91,19 +88,19 @@ return(
                       {...register("localidad", 
                       { required:{value:true, message: "Debes ingresar tu localidad"}, 
                       maxLength: {value:50, message: "La localidad no debe contener más de 50 caracteres"}, 
-                      minLength: {value:8, message: "La localidad debe contener más de 8 caracteres"} })}
+                      minLength: {value:8, message: "La localidad debe contener menos de 8 caracteres"} })}
                       onChange={handleInputChange}
                       />
                       
 
                    <input 
-                     placeholder="Código postal" 
+                     placeholder="Teléfono" 
                      type="number" 
                      name="cp"
                      {...register("cp", 
-                     { required:{value:true, message: "Debes ingresar tu código postal"}, 
-                     maxLength: {value:50, message: "El código postal no debe contener más de 10 caracteres"}, 
-                     minLength: {value:3, message: "El código postal debe contener más de 3 caracteres"} })}
+                     { required:{value:true, message: "Debes ingresar tu teléfono"}, 
+                     maxLength: {value:20, message: "El teléfono postal no debe contener más de 20 caracteres"}, 
+                     minLength: {value:8, message: "El teléfono debe contener menos de 10 caracteres"} })}
                      onChange={handleInputChange}
                      />
                      
@@ -116,12 +113,12 @@ return(
                  </div>
 
                  <div className="containerBtn">
-                   <button onClick={handleSubmit(onSubmit)}className="btnForm" type="submit">Continuar</button>
+                   <button onClick={handleSubmit(onSubmit)}className="btn-next" type="submit">Continuar</button>
                  </div>
 
                    <div className="containerByc">
                    <button className="bycButton" onClick={() => {setModalOpen(true);}}> 
-                   <img src={byc} alt="bases y condiciones"/> 
+                   Acepto Bases y Condiciones
                    </button>
 
                    {modalOpen && <Modal setOpenModal={setModalOpen} />}

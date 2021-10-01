@@ -30,7 +30,7 @@
     margin: 10rem auto 0 auto;
 }
 .containerQuiz h1{
-    margin-top: 5rem;
+    margin-top: 2rem;
     text-transform: uppercase;
 }
 
@@ -38,36 +38,39 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
+    row-gap: 1rem;
     width: 100%;
     height: 12rem;
     justify-content: center;
     align-content: space-between;
     justify-items: center;
-    margin-top: 8rem;
+    margin-top: 5rem;
 }
 .btns1 button:last-child{
     opacity: 0;
 }
 
 .answerButton1{
-    border: 0.5px solid #A91515;
+    border: 0.5px solid #FFD90F;
     border-radius: 10px;
     height: 2.8rem;
-    width: 12rem;
+    width: 18rem;
     font-family: "gothamMedium";
-    font-size: 10pt;
+    font-size: 12pt;
     font-weight: bold;
     background-color: transparent;
     transition: 0.5s;
     cursor: pointer;
+    box-shadow: 2px 2px 0px 1px #bb9f03;
 }
 
 .answerButton1:hover{
-    background-color: #A91515;
-    color: #ffffff;
+    box-shadow: none;
 }
+
 .answers img{
    width: 15rem;
+   opacity: 0.5;
 }
 
 .btns2{
@@ -108,7 +111,7 @@
     cursor: pointer;
     padding-bottom: 0.8rem;
     font-family: "gothamMedium";
-    font-size: 10pt;
+    font-size: 15pt;
     font-weight: bold;
 }
 .answerButton2:hover{
@@ -138,25 +141,25 @@
 
 @media (max-width: 600px){
     .backM1{
-        background-image: url('../assets/VICHY01_04_10\ Cel.jpg')!important;
+        background-image: url('../assets/1.png')!important;
     }
     .backM2{
-        background-image: url('../assets/VICHY02_05\ Cel.jpg')!important;
+        background-image: url('../assets/2.png')!important;
     }
     .backM3{
-        background-image: url('../assets/VICHY03_06\ Cel_.jpg')!important;
+        background-image: url('../assets/3.png')!important;
     }
 }
 .btn-next{
-    background-color: #A91515;
+    background-color: #FFD90F;
     width: 15rem;
     height: 3.2rem;
     border-radius: 20px;
     border: none;
     font-family: "gothamMedium";
-    font-size: 11pt;
+    font-size: 2rem;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
@@ -174,7 +177,7 @@
 }
 .answers img{
 
-    margin-top: 8rem;
+    margin-top: 3rem;
  }
  .btn-next{
     margin-top: 2rem;
@@ -184,14 +187,14 @@
         width: 45%;
     }
     .btns1{
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
     .containerQuiz img{
         width: 20rem;
         margin: 8rem auto 0 auto;
     }
     .answerButton1{
-        width: 15rem;
+        width: 18rem;
         column-gap: 0;
     }
     .answerButton2{
@@ -200,7 +203,7 @@
         height: 2.8rem;
         width: 20rem;
         font-family: "gothamMedium";
-        font-size: 10pt;
+        font-size: 15pt;
         font-weight: bold;
         background-color: transparent;
         transition: 0.5s;
@@ -234,10 +237,19 @@
     }
     .answers img{
         width: 15rem;
-        margin-top: 4rem;
+        margin-top: 1rem;
      }
 
      .btn-next{
-         margin-top: 2rem;
+         margin-top: 1rem;
      }
+}
+
+.correcto{
+    color: #FFD90F;
+    font-size: 2.8rem;
+}
+.incorrecto{
+    color: #ff0f0f;
+    font-size: 2.8rem;
 }

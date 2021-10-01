@@ -11,17 +11,27 @@ html {
 
 @font-face {
   font-family: "gothamMedium";
-  src: url('./assets/fonts/GothamMediumRegular.ttf');
+  src: url('./assets/fonts/BarlowCondensed-Medium.ttf');
 }
 @font-face {
   font-family: "gothamLight";
-  src: url('./assets/fonts/Gotham-XLight.otf');
+  src: url('./assets/fonts/Roboto-Light.ttf');
 }
 h1{
   font-family: "gothamMedium";
   font-size: 15pt;
   text-align: center;
-  color: #A91515;
+  color: #ffffff;
+}
+
+.logoVm{
+  font-size: 6rem;
+  opacity: 0.5;
+  margin-top: 8rem;
+  cursor: pointer;
+}
+h1 span{
+  color: #FFD90F;
 }
 
 h2{
@@ -37,7 +47,7 @@ button{
 }
 p{
   font-family: "gothamLight";
-  font-size: 10pt;
+  font-size: 12pt;
   text-align: center;
   font-weight: lighter;
 }
@@ -45,7 +55,7 @@ p{
 
 @media (min-width: 768px){
   h1{
-    font-size: 20pt;
+    font-size: 3.5rem;
   }
   h2{
     font-size: 18pt;

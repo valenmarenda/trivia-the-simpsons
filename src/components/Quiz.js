@@ -1,25 +1,27 @@
 import React, { useState } from 'react';
-import logo from '../assets/VichyLogo.png'
-import background1 from  "../assets/BG_VICHY01_10.jpg";
-import background2 from  "../assets/BG_VICHY02_05.jpg";
-import background3 from  "../assets/BG_VICHY03_06.jpg";
-import incorrecto from  "../assets/INCORRECTO.png";
-import correcto from  "../assets/CORRECTO.png";
+import background1 from  "../assets/bg1.png";
+import background2 from  "../assets/bg2.png";
+import background3 from  "../assets/bg3.png";
+import background4 from  "../assets/bg4.png";
+import background5 from  "../assets/bg5.png";
+import background6 from  "../assets/bg6.png";
+import background7 from  "../assets/bg7.png";
 import '../style/quiz.css'
 import Form from './Form';
 import {useSpring, animated} from 'react-spring'
+import Logo from './Logo';
 
 
 
 const Quiz=()=> {
 	const questions = [
 		{
-			questionText: '¿Qué porcentaje de vitamina C contienen las ampollas de peptide-c?',
+			questionText: '¿Cuál fue el primero de Los Beatles que participó como estrella invitada en la serie?',
 			answerOptions: [
-				{ answerText: '8%', isCorrect: true, btn: "answerButton1", id:1},
-				{ answerText: '10%', isCorrect: false, btn: "answerButton1", id:2 },
-				{ answerText: '5%', isCorrect: false, btn: "answerButton1", id:3},
-				{ answerText: '2.5%', isCorrect: false, btn: "answerButton1", id:4},
+				{ answerText: 'George Harrison', isCorrect: false, btn: "answerButton1", id:1},
+				{ answerText: "Ringo starr", isCorrect: true, btn: "answerButton1", id:2 },
+				{ answerText: "John Lennon", isCorrect: false, btn: "answerButton1", id:3},
+				{ answerText: "Paul Mac Arney", isCorrect: false, btn: "answerButton1", id:4},
 				{class: "answerButton2", id:5 }
 			],
             img: background1, 
@@ -27,27 +29,85 @@ const Quiz=()=> {
 			class: "btns1", 
 		},
 		{
-			questionText: '¿La vitamina C mancha?',
+			questionText: '¿Qué alimento potencialmente venenoso consume Homero en el restaurant de sushi?',
 			answerOptions: [
-				{ answerText: 'Verdadero', isCorrect: false, btn: "answerButton2", id:6 },
-				{ answerText: 'Falso', isCorrect: true,btn: "answerButton2", id:7 },
-				{class: "answerButton2", id:8 }
+				{ answerText: 'Meduza', isCorrect: false, btn: "answerButton1", id:1},
+				{ answerText: "Pez globo", isCorrect: true, btn: "answerButton1", id:2 },
+				{ answerText: "Erizo", isCorrect: false, btn: "answerButton1", id:3},
+				{ answerText: "Cangrejo", isCorrect: false, btn: "answerButton1", id:4},
+				{class: "answerButton2", id:5 }
 			],
             img: background2, 
 			img2: "backM2",
-			class:"btns2"
+			class: "btns1", 
 		},
 		{
-			questionText: '¿Las ampollas de peptide-c se usan solo de día?',
+			questionText: '¿Cómo se llama la niñera ladrona que aparece en el capítulo “Una Noche Encantadora”?',
 			answerOptions: [
-				{ answerText: 'Verdadero', isCorrect: false, btn: "answerButton3", id:9 },
-				{ answerText: 'Falso', isCorrect: true, btn: "answerButton3", id:10 },
-				{class: "answerButton3", id:11 }
+				{ answerText: 'Sra. Botz', isCorrect: true, btn: "answerButton1", id:1},
+				{ answerText: "Sra. Waine", isCorrect: false, btn: "answerButton1", id:2 },
+				{ answerText: "Sra. Rose", isCorrect: false, btn: "answerButton1", id:3},
+				{ answerText: "Sra. Lion", isCorrect: false, btn: "answerButton1", id:4},
+				{class: "answerButton2", id:5 }
 			],
             img: background3, 
-			img2: "backM3", 
-			class:"btns3"
+			img2: "backM3",
+			class: "btns1", 
 		},
+		{
+			questionText: '¿Cuál es la canción que Luan tenía grabada en un casette y ocupa para reconquistar a su esposa?',
+			answerOptions: [
+				{ answerText: 'Hasta que te conocí', isCorrect: false, btn: "answerButton1", id:1},
+				{ answerText: "Experiencia religiosa", isCorrect: true, btn: "answerButton1", id:2 },
+				{ answerText: "Por debajo de la mesa", isCorrect: false, btn: "answerButton1", id:3},
+				{ answerText: "Historia de un amor", isCorrect: false, btn: "answerButton1", id:4},
+				{class: "answerButton2", id:5 }
+			],
+            img: background4, 
+			img2: "backM2",
+			class: "btns1", 
+		},
+		{
+			questionText: '¿Cuántos gatos Lisa ha llamado Bola de Nieve?',
+			answerOptions: [
+				{ answerText: '3', isCorrect: false, btn: "answerButton1", id:1},
+				{ answerText: "4", isCorrect: true, btn: "answerButton1", id:2 },
+				{ answerText: "6", isCorrect: false, btn: "answerButton1", id:3},
+				{ answerText: "5", isCorrect: false, btn: "answerButton1", id:4},
+				{class: "answerButton2", id:5 }
+			],
+            img: background5, 
+			img2: "backM2",
+			class: "btns1", 
+		},
+		{
+			questionText: '¿Cuál es el nombre real de Bob Patiño?',
+			answerOptions: [
+				{ answerText: 'Gilberto Zaragoza Arstía', isCorrect: false, btn: "answerButton1", id:1},
+				{ answerText: "Alberto Sepúlveda Echverría", isCorrect: false, btn: "answerButton1", id:2 },
+				{ answerText: "Roberto Zabaleta Archundia", isCorrect: true, btn: "answerButton1", id:3},
+				{ answerText: "Robertino Gomez Zabaleta", isCorrect: false, btn: "answerButton1", id:4},
+				{class: "answerButton2", id:5 }
+			],
+            img: background6, 
+			img2: "backM2",
+			class: "btns1", 
+		},
+		{
+			questionText: '¿En qué adaptación musical de una obra muy famosa fue en la que participó Marge?',
+			answerOptions: [
+				{ answerText: '27 vagones de algodon', isCorrect: false, btn: "answerButton1", id:1},
+				{ answerText: "Un tranvía llamado deseo", isCorrect: true, btn: "answerButton1", id:2 },
+				{ answerText: "El zoo de cristal", isCorrect: false, btn: "answerButton1", id:3},
+				{ answerText: "Amor para siempre", isCorrect: false, btn: "answerButton1", id:4},
+				{class: "answerButton2", id:5 }
+			],
+            img: background7, 
+			img2: "backM2",
+			class: "btns1", 
+		},
+		
+
 	];
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -106,7 +166,7 @@ const Quiz=()=> {
 	})
 
 	return (
-		<div className=''>
+		<div className='' >
 			{ showScore ? (
 			  <div className='score-section'>
 				<Form prop= {score}>  </Form>					
@@ -116,12 +176,13 @@ const Quiz=()=> {
 			<div className={questions[currentQuestion].img2}  style={styleback}>
 				<div className="containerQuiz2">
 					<div className="containerQuizz3">
-				    <div>
-                      <img src={logo} alt="logo" className="logoHome"/>
+
+                      <Logo/>
+					  <div className="containerBorder">
 				      <div>
 					   <h1> {questions[currentQuestion].questionText} </h1>
 				       </div>
-				    </div>
+
 					<animated.div style={animationW} className={questions[currentQuestion].class}>
 				{questions[currentQuestion].answerOptions.map(e=>(
 
@@ -132,7 +193,7 @@ const Quiz=()=> {
 				<div  className="answers">
                    {showImg === true &&(
 					<>
-						 <img src={correcto} alt="correcto"></img>
+						 <h1 className="correcto">CORRECTO</h1>
 					     <animated.button style={stylesBtn} 
 						 className="btn-next" 
 						 onClick={nextQuestion} >Continuar</animated.button>	
@@ -140,13 +201,15 @@ const Quiz=()=> {
 				   )}
 				     {showImg === false &&(
 				        <>
-							<img src={incorrecto} alt="incorrecto"></img>
+							<h1 className="incorrecto">INCORRECTO</h1>
 							<animated.button style={stylesBtn} 
 							className="btn-next" 
 							onClick={nextQuestion}>Continuar</animated.button >	
 						</>
 				   )}
 				   
+				</div>
+
 				</div>
 				</div>
 				</div>

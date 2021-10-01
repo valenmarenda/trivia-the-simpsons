@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/VichyLogo.png'
+import Logo from  './Logo'
 import '../style/home.css'
 import {Link} from "react-router-dom"
 import '../style/finish.css'
@@ -9,13 +9,11 @@ return(
     <div className="home containerApp"> 
     <div className=" container">
         <div className="containerHome ">
-             <div>
-                 <img src={logo} alt="logo" className="logoHome"/>
-             </div>
-             <div className="containerFinish">
+             <Logo/>
+             <div className="containerBorder">
              <div>
                  <h1>¡GRACIAS POR COMPARTIR TUS DATOS!</h1>
-                 <p>Recordá que si subís tu producto Anti Edad de <b>Vichy</b> favorito con <span>#AntiedadEdadVichy</span> tendrás chances de recibir una ampolla <b>Glyco-C</b></p>
+                 <p>En breve te enviaremos un email con tu <b>Premio</b> por haber participado </p>
              </div>
              <div className="" >               
                  <Link to="/Quiz">
