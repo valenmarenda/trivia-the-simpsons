@@ -23,7 +23,7 @@ function App() {
        </Route>
        <Route exact path="/Modal">
           <Modal/>
-       </Route>      
+       </Route>     
     </Switch>
     </Router>
   );
