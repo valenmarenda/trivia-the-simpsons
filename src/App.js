@@ -5,7 +5,6 @@ import Home from './components/Home'
 import Quiz from './components/Quiz'
 import Form from './components/Form';
 import Modal from './components/Modal'
-import Logo from './components/Logo'
 import './assets/fonts/GothamMediumRegular.ttf'
 
 
@@ -25,10 +24,6 @@ function App() {
        <Route exact path="/Modal">
           <Modal/>
        </Route>      
-        <Route exact path="/New">
-          <Logo/>
-       </Route>
-      
     </Switch>
     </Router>
   );
