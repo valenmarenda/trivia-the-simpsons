@@ -1,3 +1,48 @@
+# Trivia The Simpsons
+
+Trivia con React js (hooks, react-hook-form, react-spring). 
+
+
+### Instalación 🔧
+​
+1. Forkeá y cloná el repositorio
+​
+2. Parado en la raíz del proyecto corré el comando 
+​
+   ```
+   npm install
+   ```
+​
+    para instalar todas las dependecias del proyecto
+​
+3. Usá 
+​
+   ```
+   npm start
+   ```
+​
+    para correr el proyecto, que estará disponible en http://localhost:3000
+
+
+### Dependencias 📦
+​
+-React-spring para animaciones
+​
+-React Router Dom para la navegación
+​
+-React Hook Form para formularios
+​
+​
+### Aplicación en funcionamiento 🛠️
+![React App - Google Chrome 2021-09-30 21-53-31](https://user-images.githubusercontent.com/77030740/135630014-237e5e92-6924-4adf-8ab7-c33655e23fba.gif)
+
+
+### Autora ✒️
+
+Valentina Marenda
+
+😊
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
