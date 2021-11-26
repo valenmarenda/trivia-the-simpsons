@@ -115,12 +115,12 @@
     font-weight: bold;
 }
 .answerButton2:hover{
-    background-image: url("../assets/Boton\ Cuadrado\ 02.png");
+    
     color: #ffffff;
 }
 
 .answerButton3{
-    background-image: url("../assets/BotonDiagonal01.png");
+    
     background-position: center center;
     background-size: 22rem 4rem ;
     background-repeat: no-repeat;
